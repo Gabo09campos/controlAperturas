@@ -10,18 +10,19 @@
 </head>
 
 <body>
-    <form class="agregarTienda">
+    <form class="agregarTienda" id="fromAgregarTienda">
         <div>
             <h1>Agregar tienda</h1>
         </div>
         <div class="inputAgregar">
             <div class="inputTexto">
-                <input type="text" placeholder="Numero tienda">
-                <input type="text" placeholder="Nombre tienda">
-                <input type="text" placeholder="Fecha pruebas">
-                <input type="text" placeholder="Fecha apertura">
+                <input type="text" placeholder="Numero tienda" id="numeroTienda" required>
+                <input type="text" placeholder="Nombre tienda" id="nombreTienda" required>
+                <input type="text" placeholder="Fecha pruebas" id="fechaPruebas" required>
+                <input type="text" placeholder="Fecha apertura" id="fechaApertura" required>
+                <p class="warnings" id="warnings"></p>
                 <div class="inputBotones">
-                    <button class="btnAceptar">Aceptar</button>
+                    <button class="btnAceptar" onclick="agregarTienda()">Aceptar</button>
                     <button class="btnCancelar">Cancelar</button>
                 </div>
             </div>   
@@ -33,6 +34,7 @@
         <img src="assets/logos/chredraui an.png" alt="Logo Chedraui" class="LogoChedraui">
     </footer>
 
+    <script src="js/agregarTienda.js"></script>
 </body>
 
 </html>
